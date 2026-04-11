@@ -6,11 +6,10 @@ on:
     workflow_dispatch:
     paths:
       - 'frontend/**'
-      - './.github/workflows/_reusable-deploy.yml'
 
 jobs:
   deploy-frontend:
-    uses: ./.github/workflows/_reusable-deploy.yml
+    uses: jayapraveenasrinivasan0315-afk/task1/.github/workflows/_reusable-deploy.yml
     with:
       deployment_type: frontend
       environment: development
