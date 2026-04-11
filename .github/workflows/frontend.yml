@@ -9,7 +9,7 @@ on:
 
 jobs:
   deploy-frontend:
-    uses: jayapraveenasrinivasan0315-afk/task1/.github/workflows/_reusable-deploy.yml
+    uses: jayapraveenasrinivasan0315-afk/task1/.github/workflows/_reusable-deploy.yml@main
     with:
       deployment_type: frontend
       environment: development
