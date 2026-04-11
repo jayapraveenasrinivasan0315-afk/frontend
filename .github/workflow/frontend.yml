@@ -1,0 +1,20 @@
+name: Deploy Frontend
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'frontend/**'
+      - './.github/workflows/_reusable-deploy.yml'
+
+jobs:
+  deploy-frontend:
+    uses: ./.github/workflows/_reusable-deploy.yml@main
+    with:
+      deployment_type: frontend
+      environment: development
+      app_path: frontend
+      app_name: frontend-app
+      artifact_name: frontend-build
+      region: asia-south1
+      secrets: inherit
