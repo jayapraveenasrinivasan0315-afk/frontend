@@ -9,7 +9,7 @@ on:
 
 jobs:
   deploy-frontend:
-    uses: ./.github/workflows/_reusable-deploy.yml@main
+    uses: ./.github/workflows/_reusable-deploy.yml
     with:
       deployment_type: frontend
       environment: development
