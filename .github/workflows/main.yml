@@ -1,6 +1,12 @@
 name: Release
+
 on:
   workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   release:
     uses: jayapraveenasrinivasan0315-afk/cherry-pick/.github/workflows/release.yml@main
@@ -8,5 +14,3 @@ jobs:
       app_name: frontend
     secrets:
       GH_TOKEN: ${{ secrets.GH_PAT }}
-
-    
