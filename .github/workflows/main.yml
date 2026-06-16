@@ -8,6 +8,6 @@ jobs:
     uses: jayapraveenasrinivasan0315-afk/cherry-pick/.github/workflows/release.yml@main
     with:
       app_name: frontend
-      target_repo: jayapraveenasrinivasan0315-afk/frontend   # ← add this
+      target_repo: jayapraveenasrinivasan0315-afk/frontend
     secrets:
       GH_TOKEN: ${{ secrets.GH_PAT }}
