@@ -1,16 +1,13 @@
+# frontend/.github/workflows/release.yml
 name: Release
-
 on:
   workflow_dispatch:
-
-permissions:
-  contents: write
-  pull-requests: write
 
 jobs:
   release:
     uses: jayapraveenasrinivasan0315-afk/cherry-pick/.github/workflows/release.yml@main
     with:
       app_name: frontend
+      target_repo: jayapraveenasrinivasan0315-afk/frontend   # ← add this
     secrets:
       GH_TOKEN: ${{ secrets.GH_PAT }}
