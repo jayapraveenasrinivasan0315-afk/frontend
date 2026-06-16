@@ -3,6 +3,10 @@ name: Release
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   release:
     uses: jayapraveenasrinivasan0315-afk/cherry-pick/.github/workflows/release.yml@main
