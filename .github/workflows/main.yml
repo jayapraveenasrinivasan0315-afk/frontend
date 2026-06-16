@@ -6,7 +6,6 @@ jobs:
     uses: jayapraveenasrinivasan0315-afk/cherry-pick/.github/workflows/release.yml@main
     with:
       app_name: frontend
-      base_branch: feature-release-note
     secrets:
       GH_TOKEN: ${{ secrets.GH_PAT }}
 
