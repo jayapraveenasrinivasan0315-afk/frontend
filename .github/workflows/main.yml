@@ -2,11 +2,11 @@ name: Release
 
 on:
   workflow_dispatch:
+
 jobs:
   release:
-    uses: jayapraveenasrinivasan0315-afk/cherry-pick/release.yml
+    uses: jayapraveenasrinivasan0315-afk/cherry-pick/.github/workflows/release.yml@main
     with:
       app_name: frontend
     secrets:
       GH_TOKEN: ${{ secrets.GH_PAT }}
-
