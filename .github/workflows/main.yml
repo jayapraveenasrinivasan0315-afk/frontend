@@ -2,6 +2,11 @@ name: Release
 
 on:
   workflow_dispatch:
+    inputs:
+      app_name:
+        description: 'App name for release'
+        required: false
+        default: "frontend"
 
 permissions:
   contents: write
@@ -9,8 +14,10 @@ permissions:
 
 jobs:
   release:
+    name: Create Release
     uses: jayapraveenasrinivasan0315-afk/cherry-pick/.github/workflows/release.yml@main
     with:
-      app_name: frontend
+      app_name: ${{ inputs.app_name }}
+      base_branch: "production"     # or whatever your production branch is
     secrets:
       GH_TOKEN: ${{ secrets.GH_PAT }}
