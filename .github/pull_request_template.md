@@ -1,11 +1,29 @@
-## Release Type (Required)
+# Fill this template
 
-Choose only one:
+# For Non-Production PRs, remove the Production section.
 
-- [ ] major=true
-- [ ] minor=true
-- [ ] patch=true
+# For Production PRs (staging → production), remove the Non-Production section.
 
-## Release Notes
+# Remove all comments before creating the PR.
 
-Describe the changes included in this release.
+## Non Production
+
+### What's Changed
+
+* Describe change 1
+* Describe change 2
+
+## Production
+
+Minor=false
+
+Major=false
+
+Patch=false
+### What's Changed
+
+* Describe change 1
+* Describe change 2
+### Bug Fixes
+* * Describe 
+* Describe 
