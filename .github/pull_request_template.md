@@ -1,4 +1,8 @@
-Fill this template. For Non-Production PRs, remove the Production section. For Production PRs (staging → production), remove the Non-Production section. Remove all comments before creating the PR.
+Fill this template. For Non-Production PRs, remove the Production section. 
+
+For Production PRs (staging → production), remove the Non-Production section. 
+
+Remove all comments before creating the PR.
 
 ---
 
